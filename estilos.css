@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+/*SECCION INICIO*/
+#inicio{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/img/LogoImprentaBarranca.png');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#inicio .contenido header{
+    background-color: rgba(0, 0, 0, 0.733);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+    background-image: url('/img/logo.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    text-indent: -999px; 
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .seleccionado{
+    color:#ff5080
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: #ff5080;
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 60px;
+    color: #fff;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius:50px ;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover{
+    background-color: #ff5080;
+}
+
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+/*DESCRIPCION*/
+#descripcion {
+    text-align: center;
+
+}
+.contenedor-foto1 {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-foto1 img {
+    padding: 40px; 
+}
+
+.contenedor-foto1 div {
+    padding: 50px; 
+}
+
+.titulo-seccion1 {
+    margin-top:0;
+    color: red
+}
+
+.contenedor-foto1 h2 {
+    font-size: 1.5em; 
+}
+
+.contenedor-foto1 p {
+    text-align: justify;
+}
+
+/*contenedor2*/
+.contenedor-foto2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.contenedor-foto2 img {
+    padding: 40px; 
+}
+
+.contenedor-foto2 div {
+    padding: 50px; 
+}
+
+.titulo-seccion2 {
+    margin-top: 0;
+    color: red
+
+}
+
+.contenedor-foto2 h2 {
+    font-size: 1.5em; 
+}
+
+.contenedor-foto2 p {
+    text-align: justify;
+}
+
+/*contenedor3*/
+.contenedor-foto3 {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-foto3 img {
+    padding: 40px; 
+}
+
+.contenedor-foto3 div {
+    padding: 50px; 
+}
+
+.titulo-seccion3 {
+    margin-top: 0;
+    color: red
+
+}
+
+.contenedor-foto3 h2 {
+    font-size: 1.5em; 
+}
+
+.contenedor-foto3 p {
+    text-align: justify;
+}
+
+/*GALERIA*/
+#galeria {
+    text-align: center;
+    color: red
+}
+.carousel-inner img {
+    margin: 0 auto;
+    width: 50%; /* O tamaño que prefieras */
+    height: auto;
+}
+
+/*Servicios*/
+#servicio{
+    text-align: center;
+    color: black
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Color de fondo para todas las secciones */
+    padding: 20px; /* Añade un poco de espacio interno al contenedor */
+}
+
+.image-container {
+    flex: 1;
+    order: 2;
+}
+
+.text-container {
+    flex: 1;
+    order: 1;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos para cada sección */
+#imprenta {
+    background-color: #ffd700; /* Color de fondo para la sección "Imprenta" */
+}
+
+#marketing {
+    background-color: #87ceeb; /* Color de fondo para la sección "Marketing Digital" */
+}
+
+#producciones {
+    background-color: #90ee90; /* Color de fondo para la sección "Producciones" */
+}
+
+/*ATENCION*/
+/* Estilo para el contenedor principal */
+.MuiGrid-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  /* Estilo para el contenedor de días de la semana y "Todo el día" */
+.U75ZFsLd {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas iguales */
+    gap: 10px; /* Espacio entre las columnas */
+}
+  
+  /* Estilo para los días de la semana y "Todo el día" */
+._3-HL5obl {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final de la fila */
+    align-items: center;
+    border: 1px solid #ccc; /* Añade un borde para mayor claridad visual */
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+  /* Estilo para el título */
+#oh-title span {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+  
+  /* Estilo para el día actual */
+._37sJjnua {
+    background-color: #ffc107;
+}
+
+/*UBICACION*/
+.mapa{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+/*CONTACTO*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+span {
+    color: red;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*SECCION FOOTER*/
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+
